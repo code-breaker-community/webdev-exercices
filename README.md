@@ -1,41 +1,74 @@
 # webdev-exercices
 
-## Description  
+## Description
+
 Bienvenue dans le dépôt **webdev-exercices** !  
-Ici, vous pouvez **envoyer votre travail** en suivant les étapes expliquées ci-dessous. Ce dépôt sert à centraliser les exercices de l'équipe WebDev de la communauté Code Breaker.
+Ici, vous pouvez **soumettre votre travail** en suivant les étapes ci-dessous. Ce dépôt centralise les exercices de l'équipe WebDev de la communauté Code Breaker.
 
 ---
 
-## Comment envoyer votre travail sur GitHub  
+## 1. Structure recommandée pour votre projet personnel
 
-### 1. Si vous démarrez un nouveau projet localement  
-Suivez ces commandes dans votre terminal :  
+Organisez votre travail dans un dossier à votre nom, avec une structure claire, par exemple :
+
+```
+Michee/
+├── element_graphique/
+├── css/
+├── html/
+└── README_personnel.md  # Présentation ou notes personnelles
+```
+
+---
+
+## 2. Démarrer un nouveau projet localement
+
+Dans votre terminal, exécutez les commandes suivantes :
+
 ```bash
-# Crée un fichier README.md avec un titre
-echo "# webdev-exercices" >> README.md
+# Créer un fichier README.md avec un titre
+echo "# webdev-exercices" > README.md
 
-# Initialise un dépôt Git local
+# Initialiser un dépôt Git local
 git init
 
-# Ajoute le fichier README.md à l'index Git
+# Ajouter le fichier README.md à l’index Git
 git add README.md
 
-# Effectue un premier commit
+# Effectuer un premier commit
 git commit -m "premier commit"
 
-# Renomme la branche principale en 'main'
+# Renommer la branche principale en 'main'
 git branch -M main
-
+```
 
 ---
 
-Tu peux copier ce texte dans ton fichier `README.md`, le pousser sur GitHub, et ta communauté aura un guide clair et complet.  
+## 3. Connecter un projet existant à GitHub
 
-Veux-tu que je t’aide à automatiser le dépôt aussi ?
+Si vous avez déjà un projet local, connectez-le au dépôt distant :
 
-
-# Connecte votre dépôt local au dépôt distant sur GitHub
+```bash
+# Ajouter le dépôt distant
 git remote add origin https://github.com/code-breaker-community/webdev-exercices.git
 
-# Envoie votre travail sur GitHub
+# Renommer la branche courante en 'main' (forcer si nécessaire)
+git branch -M main
+
+# Envoyer les commits locaux vers GitHub
 git push -u origin main
+```
+
+---
+
+## 4. Conseils pour une collaboration efficace
+
+- Travaillez toujours dans votre dossier personnel ou sur une branche dédiée.
+- Avant de commencer un exercice, créez une branche :
+    ```bash
+    git checkout -b votre-nom-exercice-01
+    ```
+- Envoyez votre travail via une Pull Request pour permettre la revue avant fusion.
+- Ne modifiez pas les dossiers ou fichiers des autres membres.
+
+Bonne collaboration à tous et bon courage pour vos exercices ! 🚀
