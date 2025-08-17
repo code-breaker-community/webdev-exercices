@@ -1,0 +1,17 @@
+# 1. Créer une nouvelle branche et se placer dessus
+git checkout -b nom-de-ta-branche
+
+# 2. Vérifier que tu es bien sur la nouvelle branche
+git branch
+
+# 3. Ajouter tes fichiers à Git
+git add .
+
+# 4. Faire un commit avec un message
+git commit -m "Mon travail sur la nouvelle branche"
+
+# 5. Envoyer la branche vers GitHub
+git push origin nom-de-ta-branche
+
+# 6. (Optionnel) Aller sur GitHub pour créer une Pull Request
+# Cela permet de proposer que ton travail soit fusionné dans main
