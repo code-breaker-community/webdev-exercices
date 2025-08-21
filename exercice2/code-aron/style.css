@@ -44,7 +44,7 @@ body {
 }
 
 .nav__link:hover {
-  color:rgb(13, 116, 163);
+  color: rgb(13, 116, 163);
   transition: color 0.3s ease;
 }
 
@@ -116,7 +116,7 @@ body {
 }
 .section__button {
   padding: 10px 20px;
-  background-color:rgb(13, 116, 163);
+  background-color: rgb(13, 116, 163);
   color: white;
   cursor: pointer;
   font-size: 16px;
@@ -148,16 +148,21 @@ body {
   width: 100%;
   height: auto;
 }
-
+.section--products {
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .container {
   position: relative; /* Nécessaire pour le positionnement absolu des enfants */
-  width: 80%;
+  width: 100%;
   height: 100px;
 }
 
 .background-element {
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -179,7 +184,7 @@ body {
 }
 
 .overlay-element p {
-  color: rgb(225, 226, 235);
+  color: rgb(180, 190, 194);
   font-size: 30px;
   text-align: center;
 }
@@ -193,4 +198,58 @@ body {
 .overlay-element a:hover {
   color: rgb(14, 17, 110);
   transition: color 0.3s ease;
+}
+.container-produits {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.container__product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background-color: rgba(77, 75, 75, 0.932);
+  border-radius: 25px;
+  height: 250px;
+}
+
+.container__product .container-img1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -45px;
+}
+.container__product .container-img1 img {
+  width: 60%;
+  height: auto;
+}
+
+.container__product .container-img2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -75px;
+}
+.container__product .container-img2 img {
+  width: 68%;
+  height: 100px;
+
+}
+
+.container__product p{
+  position: relative;
+  top: -75px;
 }
