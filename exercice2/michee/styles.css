@@ -4,14 +4,21 @@
     margin: 0;
 }
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'ariel', sans-serif;
     background-color: rgb(10, 10, 10);
+   
+}
+main{
     padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 header{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 10px;
 }
 header .logo h1{
     color: white;
@@ -26,6 +33,7 @@ nav ul a{
    text-decoration: none;
 }
 #banniere{
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,13 +45,14 @@ nav ul a{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
 }
 #banniere .left h1 {
     font-weight: lighter;
     font-size: 2.8em;
 }
 #banniere .left .description{
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -51,7 +60,9 @@ nav ul a{
 #banniere .left p{
     font-size: 23px;
     color: white;
-    text-align: justify;
+}
+#banniere .left p span{
+    color: rgb(0, 157, 255);
 }
 #banniere .left .contenent_bouton {
     display: flex;
@@ -72,11 +83,198 @@ nav ul a{
 
 }
 #banniere .right{
-    flex: 1;
-    padding: 20px;
+    height:50%;
+    width: 45%;
 }
 #banniere .right img{
     width: 100%;
-    height: 50%;
+    height: 100%;
+}
 
+#produits{
+    margin-top: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.titre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titre h1{
+    font-size: 70px;
+    opacity: 0.3;
+    text-align: center;
+    color:rgb(0, 157, 255) ;
+}
+.titre p{
+    font-size: 20px;
+    position: relative;
+    bottom: 30px;
+    color:rgb(255, 255, 255) ;
+}
+.titre a{
+    position: relative;
+    bottom: 20px;
+    text-decoration: none;
+    color:rgb(0, 157, 255);
+}
+.conteneur{
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 300px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    border-radius: 30px;
+}
+.card img{
+    height: 45%;
+    position: absolute; 
+    bottom: -700px;
+}
+
+#services{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+#services .conteneurg{
+    display: flex;
+    gap: 30px;
+    
+}
+#services .conteneurg .conteneur1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+}
+
+#services .conteneurg .card_service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(50, 50, 50);
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    
+}
+.membres{
+
+}
+.cardm{
+    color: white;
+    background-color: rgb(50, 50, 50);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#contacts .conteneur{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    color: white;
+}
+#contacts .conteneur .left{
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+#contacts .conteneur .left a{
+    text-decoration: none;
+    color: rgb(0, 157, 255);
+    font-size: 20px;
+    display: flex;
+   
+}
+
+#contacts .conteneur form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#contacts .conteneur form .box{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+#contacts .conteneur form input{
+    color: white;
+    background-color: rgb(50, 50, 50);
+    width: 100%;
+    padding: 15px 10px;
+    border: none;
+}
+#contacts .conteneur form textarea{
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+    height: 200px;
+    padding: 15px 10px;
+    border: none;
+}
+#contacts .conteneur form input[type="submit"]{
+    background-color: rgb(0, 157, 255);
+    color: white;
+    border: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    width: 50%;
+}
+footer {
+
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+
+}
+footer .conteneurfooter{
+    padding: 20px 100px;
+    color: white;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+
+}
+footer .conteneurfooter .colone{
+
+}
+footer .conteneurfooter .colone ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+
+}
+footer .conteneurfooter .colone ul a{
+    color: white;
+    text-decoration: none;
+}
+.ligne{
+    
+    width: 800px;
+    margin: 20px auto;
+    height: 1px;
+    background-color: white;
 }
