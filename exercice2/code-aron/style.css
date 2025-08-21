@@ -173,6 +173,7 @@ body {
   left: 20px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   width: 100%;
 }
@@ -181,4 +182,15 @@ body {
   color: rgb(225, 226, 235);
   font-size: 30px;
   text-align: center;
+}
+.overlay-element a {
+  text-decoration: none;
+  color: rgb(13, 116, 163);
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 40px;
+}
+.overlay-element a:hover {
+  color: rgb(14, 17, 110);
+  transition: color 0.3s ease;
 }
