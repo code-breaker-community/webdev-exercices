@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #161616;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(131, 130, 130);
+}
+
+#logo {
+  color: white;
+}
+
+.nav__list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.nav__item {
+  display: inline-block;
+}
+.nav__item:hover {
+  border-bottom: 4px solid rgb(13, 116, 163);
+  padding: 0 0 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+.nav__link {
+  color: rgb(114, 113, 113);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav__link:hover {
+  color:rgb(13, 116, 163);
+  transition: color 0.3s ease;
+}
+
+.header__action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px rgb(114, 113, 113);
+  width: 100px;
+  height: 35px;
+  border-radius: 4px;
+}
+.header__action a {
+  color: rgb(114, 113, 113);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+}
+.header__action a:hover {
+  color: rgb(13, 116, 163);
+  transition: color 0.3s ease;
+}
+.header__action:hover {
+  border-color: rgb(13, 116, 163);
+  color: rgb(13, 116, 163);
+  transition: color 0.3s ease;
+}
+
+.section {
+  width: 80%;
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.section__content {
+  color: white;
+  font-size: 18px;
+  width: 60%;
+}
+.section__title {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 45px;
+}
+.section__description1 {
+  color: rgb(131, 130, 130);
+}
+
+.section__description2 {
+  color: rgb(214, 213, 213);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.prix1 {
+  color: rgb(13, 116, 163);
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.section__buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.section__button {
+  padding: 10px 20px;
+  background-color:rgb(13, 116, 163);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border: 2px solid rgba(25, 112, 194, 0.459);
+}
+.section__button:hover {
+  background-color: rgb(14, 17, 110);
+  transition: background-color 0.3s ease;
+}
+.section__button:active {
+  background-color: rgb(10, 12, 80);
+  transition: background-color 0.1s ease;
+}
+.button--secondary {
+  background-color: rgba(255, 255, 255, 0.014);
+  border: 2px solid rgb(145, 142, 142);
+}
+.button-link {
+  text-decoration: none;
+  color: white;
+}
+
+.section__image {
+  width: 40%;
+  height: auto;
+}
+
+.section__image img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  position: relative; /* Nécessaire pour le positionnement absolu des enfants */
+  width: 80%;
+  height: 100px;
+}
+
+.background-element {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.background-element h1 {
+  color: rgba(25, 112, 194, 0.459);
+  font-size: 60px;
+}
+
+.overlay-element {
+  position: absolute;
+  top: 35px;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.overlay-element p {
+  color: rgb(225, 226, 235);
+  font-size: 30px;
+  text-align: center;
+}
