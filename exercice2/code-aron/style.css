@@ -316,3 +316,33 @@ body {
   width: 100%;
   height: auto;
 }
+
+#membres{
+  margin-top: 700px;
+}
+
+.container-membres {
+  margin-top: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+
+.images-membres {
+  width: 95%;
+  height: auto;
+  border-radius: 50%;
+  display: flex;
+}
+.images-membres img {
+  width: 100%;
+  height: auto;
+}
+
+.images-membres img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+
