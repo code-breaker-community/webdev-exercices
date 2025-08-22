@@ -10,6 +10,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .header {
   display: flex;
@@ -301,4 +303,16 @@ body {
   font-size: 20px;
   margin-top: 10px;
   text-align: left;
+}
+
+.container-souris {
+  position: absolute;
+  bottom: -430px;
+  right: -25%;
+  width: 40%;
+  height: auto;
+}
+.container-souris img {
+  width: 100%;
+  height: auto;
 }
