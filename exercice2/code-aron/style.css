@@ -317,7 +317,7 @@ body {
   height: auto;
 }
 
-#membres{
+#membres {
   margin-top: 700px;
 }
 
@@ -332,7 +332,7 @@ body {
 .images-membres {
   width: 95%;
   height: auto;
-  border-radius: 50%;
+
   display: flex;
 }
 .images-membres img {
@@ -344,5 +344,59 @@ body {
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
+#contact {
+  margin-top: 250px;
+  margin-bottom: 100px;
+}
+.container-contact {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 100px;
+}
 
+.info-contact {
+  width: 40%;
+  color: rgb(204, 202, 202);
+}
 
+.info-contact h1 {
+  color: white;
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+.info-contact p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.info-contact span {
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+}
+.info-contact span i {
+  width: 20px;
+  height: auto;
+  margin-top: 3px;
+  color: rgb(13, 116, 163);
+}
+
+.info-contact span p {
+  font-size: 15px;
+}
+.social-icons{
+  display: flex;
+  gap: 25px;
+  margin-top: 20px;
+}
+.social-icons i{
+  font-size: 25px;
+  color: rgb(13, 116, 163);
+  cursor: pointer;
+}
+.social-icons i:hover{
+  color: rgb(14, 17, 110);
+  transition: color 0.3s ease;
+}
